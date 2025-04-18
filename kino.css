@@ -1,0 +1,349 @@
+.stylish-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: linear-gradient(90deg, #1E90FF, #87CEFA); /* Gradient ko'rinish */
+    padding: 15px;
+    border-radius: 10px; /* Chegaralarni yumaloqlash */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* So’ya */
+    position: sticky; /* Yuqori pozitsiya uchun */
+    top: 0;
+    z-index: 1000;
+}
+
+.stylish-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Interaktiv o‘tish */
+    border-radius: 5px; /* Ichki yumaloqlangan dizayn */
+}
+
+.stylish-nav a:hover {
+    background-color: #FFD700; /* Hover effekti uchun oltin rang */
+    transform: scale(1.2); /* Biroz kattalashtirish */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Hover so’yasi */
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%); /* Tasvirni biroz qorong'i ko'rsatadi */
+    border-radius: 10px; /* Yumaloq chetlar */
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Kontentni markazlashtirish */
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Yozuvni o‘quvchan qilish */
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-button {
+    background-color: #007BFF; /* Ko'k rang */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* O‘tish effektlari */
+}
+
+.hero-button:hover {
+    background-color: #0056b3; /* Qorong'iroq ko'k rang */
+    transform: scale(1.1); /* Tugmani kattalashtirish */
+}
+.plans-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.plans-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.plan-card {
+    display: inline-block;
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.plan-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #007BFF;
+}
+
+.plan-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+.plan-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.plan-card ul li {
+    font-size: 16px;
+    color: #555;
+    margin: 10px 0;
+}
+
+.plan-card button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.plan-card button:hover {
+    background-color: #0056b3;
+}
+.ads-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background: linear-gradient(120deg, #007BFF, #00C6FF); /* Gradient fon */
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Zamonaviy soya */
+}
+
+.ad-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ad-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.ad-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.ad-card h3 {
+    font-size: 20px;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+.ad-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.ad-button {
+    background-color: #FFD700; /* Oltin rang */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.ad-button:hover {
+    background-color: #FFC107; /* Yorqin oltin hover */
+    transform: scale(1.1); /* Tugmani kattalashtirish */
+}
+.live-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.chat-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.chat-button:hover {
+    transform: scale(1.1);
+}
+
+.chat-box {
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: none; /* Boshlang‘ich holatda yashirilgan */
+}
+
+.chat-box h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.chat-messages {
+    height: 150px;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.user-message {
+    text-align: right;
+    color: #007BFF;
+}
+
+#chat-input {
+    width: 80%;
+    padding: 10px;
+    margin-right: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#send-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden; /* Banner chekkasidan tashqariga chiqishni bloklash */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    filter: brightness(60%); /* Tasvirni qora fon bilan birlashtirish */
+}
+
+.banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 600px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Yozuvni o‘qilishi oson qilish */
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.banner-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary, .btn-secondary {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.btn-primary {
+    background-color: #FFD700;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #FFC107;
+    transform: scale(1.1);
+}
+
+.btn-secondary {
+    background-color: white;
+    color: #007BFF;
+    border: 2px solid #007BFF;
+}
+
+.btn-secondary:hover {
+    background-color: #f0f0f0;
+    transform: scale(1.1);
+}
