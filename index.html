@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="logo">Jasur Dev</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Bosh sahifa</a>
+      <a href="#about">Men haqimda</a>
+      <a href="#projects">Loyihalar</a>
+      <a href="#contact">Bog‘lanish</a>
+    </nav>
+    <div class="hamburger" id="hamburger">&#9776;</div>
+  </header>
+
+  <!-- Fake sections for demo -->
+    <!-- Bosh sahifa -->
+<section id="home" class="home-section">
+  <div class="home-content">
+    <div class="text">
+      <h1>Salom! Men Jasur</h1>
+      <p>Frontend dasturchi va UI dizayner</p>
+      <a href="#projects" class="btn">Loyihalarni ko‘rish</a>
+    </div>
+    <div class="image">
+      <img src="IMG_20241024_094655_825.jpg" alt="Jasur rasmi">
+    </div>
+  </div>
+</section>
+
+<!-- Men haqimda -->
+<section id="about" class="about-section">
+  <div class="about-content">
+    <div class="image">
+      <img src="IMG_20241024_094655_825.jpg" alt="Men haqimda rasmi">
+    </div>
+    <div class="text">
+      <h2>Men haqimda</h2>
+      <p>
+        Men Jasur – frontend dasturchiman. Zamonaviy texnologiyalar orqali tezkor va interaktiv veb-ilovalar yarataman. Har bir loyihada dizayn va funksionallikka alohida e’tibor beraman.
+      </p>
+      <p>
+        Ishlatadigan texnologiyalarim: HTML, CSS, JavaScript, React, Tailwind, Figma va boshqalar.
+      </p>
+    </div>
+  </div>
+</section>
+  <!-- Loyihalar -->
+<section id="projects" class="projects-section">
+  <div class="container">
+    <h2>Loyihalarim</h2>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <img src="https://www.cbisland.com/content/uploads/2020/03/take-out-menu-1920x960.jpg" alt="Loyiha 1">
+        <h3>MrJan Fast Food</h3>
+        <p>Fastfood buyurtma qilish tizimi — to‘lov, yetkazib berish va interfeys mavjud.</p>
+        <a href="#" class="btn">Batafsil</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://yt3.ggpht.com/ytc/AMLnZu9UgesZavL9JZhC9vnNRoJPSvpeHtO7UIZ7ZEGIoQ=s900-c-k-c0x00ffffff-no-rj" alt="Loyiha 2">
+        <h3>Trend.uz</h3>
+        <p>Yangiliklar, mahsulotlar, savatga qo‘shish va to‘lov tizimi bilan veb-sayt.</p>
+        <a href="#" class="btn">Batafsil</a>
+      </div>
+
+      <div class="project-card">
+        <img src="https://play-lh.googleusercontent.com/ntQRAvj0YT3b8logtwdm35eAR6GWAAguhfbqgjO3Xi11TPoWX7n72-qz13RQ8lVdPWo" alt="Loyiha 3">
+        <h3>Taxi Go</h3>
+        <p>Yandex Go uslubida taxi ilovasi – haydovchi tanlash, xarita, narx va bog‘lanish.</p>
+        <a href="#" class="btn">Batafsil</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+  
+  
+  <!-- Bogʻlanish -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <h2>Men bilan bogʻlaning</h2>
+    <div class="social-boxes">
+
+      <a href="https://t.me/Jasurbek_u7" target="_blank" class="social-box telegram">
+        <i class="fab fa-telegram-plane"></i>
+        <span>Telegram</span>
+      </a>
+
+      <a href="https://instagram.com/bobojono1c_" target="_blank" class="social-box instagram">
+        <i class="fab fa-instagram"></i>
+        <span>Instagram</span>
+      </a>
+
+      <a href="https://github.com/jaskarr" target="_blank" class="social-box github">
+        <i class="fab fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.onclick = () => {
+      navLinks.classList.toggle('show');
+    };
+  </script>
+</body>
+</html>
